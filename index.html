@@ -3,6 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
     <title>Rakib's Portfolio Website</title>
     <link rel="shortcut icon" href="./images/coding.png" type="image/x-icon">
     <style>
@@ -140,23 +152,18 @@
            </section>
 
            <!-- contract section -->
-            <section id="contract">
-                <h2>Contract Me</h2>
-                <form >
-                    <div><label for="name">Name</label>
-                    <input type="text" name="name" id="name"></div>
+           <section><fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+  <legend class="fieldset-legend">Login</legend>
 
-                    <div><label for="email">Email</label>
-                    <input type="email" name="email" id="email"></div>
+  <label class="label">Email</label>
+  <input type="email" class="input" placeholder="Email" />
 
-                    <div><label for="massage">Massage</label>
-                    <textarea name="massage" id="massage" rows="4"></textarea></div>
+  <label class="label">Password</label>
+  <input type="password" class="input" placeholder="Password" />
 
-                    <div><!-- <input type="submit " value="Send Massage"> -->
-                    <button type="submit">Send Massage</button></div>
-                </form>
-            </section>
-
+  <button class="btn btn-neutral mt-4">Login</button>
+</fieldset>
+</section>
 
     </main>
     <!-- footer section -->
